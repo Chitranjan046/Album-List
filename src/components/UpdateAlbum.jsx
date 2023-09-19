@@ -1,46 +1,56 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import './UpdateAlbum.css';
 
-const UpdateAlbum = (props) => {
-  
-  const getUpdateData = () => {
-    const id = props.album.id;
-    let updateTitle = document.getElementById('title-inp').value;
-    let updateUserid = document.getElementById('userid-inp').value;
+const UpdateAlbum = ({ album, updateAlbumInList }) => {
+  const [updateTitle, setUpdateTitle] = useState('');
+  const [updateUserid, setUpdateUserid] = useState('');
 
-    if (updateTitle === '') {
-      updateTitle = props.album.title;
-    }
-    if (updateUserid === '') {
-      updateUserid = props.album.userId;
-    }
-    props.updateAlbumInList(id, updateTitle, Number(updateUserid), props.album);
-  }
+  const handleSaveClick = () => {
+    const id = album.id;
+    const newTitle = updateTitle || album.title;
+    const newUserId = Number(updateUserid) || album.userId;
+
+    updateAlbumInList(id, newTitle, newUserId, album);
+  };
 
   return (
     <>
       <Navbar path="/" page="Home" />
-      <div className='update-album'>
-        <div className='form-container'>
-          <h4>Title : {props.album.title}</h4>
-          <div className='inp-container'>
-            Enter New Title :
-            <input type="text" id='title-inp' placeholder='Enter New Title'></input>
+      <div className="update-album">
+        <div className="form-container">
+          <h4>Title: {album.title}</h4>
+          <div className="inp-container">
+            Enter New Title:
+            <input
+              type="text"
+              placeholder="Enter New Title"
+              value={updateTitle}
+              onChange={(e) => setUpdateTitle(e.target.value)}
+            />
           </div>
 
-          <h4>User Id : {props.album.userId}</h4>
-          <div className='inp-container'>
-            Enter New UserId :
-            <input type="number" id='userid-inp' placeholder='Enter New UserId'></input>
+          <h4>User Id: {album.userId}</h4>
+          <div className="inp-container">
+            Enter New UserId:
+            <input
+              type="number"
+              placeholder="Enter New UserId"
+              value={updateUserid}
+              onChange={(e) => setUpdateUserid(e.target.value)}
+            />
           </div>
 
-          <Link to='/'><button type='submit' onClick={getUpdateData}>Save</button></Link>
+          <Link to="/">
+            <button type="submit" onClick={handleSaveClick}>
+              Save
+            </button>
+          </Link>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default UpdateAlbum;
