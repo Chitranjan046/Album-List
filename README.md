@@ -1,3 +1,20 @@
+# Hosted-Website Link : https://resonant-rugelach-12f0bf.netlify.app/
+
+# Albums List React App
+
+This project is a web application built with React.js that allows users to manage and view a list of albums. Users can add new albums, delete existing ones, and view details of each album.
+
+## Features
+
+- **View Albums:** Browse through a list of albums with their respective details such as title, artist, release year, and genre.
+
+- **Add Album:** Add a new album to the list by providing the title, artist, release year, and genre.
+
+- **Delete Album:** Remove an album from the list.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
