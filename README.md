@@ -2,14 +2,12 @@
 
 # Albums List React App
 
-This project is a web application built with React.js that allows users to manage and view a list of albums. Users can add new albums, delete existing ones, and view details of each album.
+This project is a web application developed using React.js, designed to enable users to efficiently manage and access a curated list of albums. Within this application, users have the capability to perform various actions, including adding new albums, removing existing ones, and accessing in-depth details for each individual album.
 
 ## Features
 
-- **View Albums:** Browse through a list of albums with their respective details such as title, artist, release year, and genre.
-
-- **Add Album:** Add a new album to the list by providing the title, artist, release year, and genre.
-
+- **Add Album:** Add a new album to the list by providing the title and User Id.
+- **Update Album:** Update  a Existing album to the list by providing the title and User Id.
 - **Delete Album:** Remove an album from the list.
 
 
