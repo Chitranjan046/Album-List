@@ -1,0 +1,54 @@
+.list{
+    border-radius: none;
+    width: 350px;
+  height: 200px; /* Adjusted height to accommodate four cards in a column */
+  background: linear-gradient(45deg, #ece112, #ee840a);
+  margin-bottom: 10px; /* Increased margin for spacing between cards */
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+     
+}
+.list h3{
+    text-align: center;
+    text-transform: capitalize;
+}
+.button-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* List component style */
+
+.update-btn{
+    background-color: rgb(30, 249, 23);
+    color: black;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.update-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.delete-btn{
+    cursor: pointer;
+    border: 0px;
+    padding: 10px 20px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+.delete-btn:hover{
+    color:red;
+    background-color:white;
+}

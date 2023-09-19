@@ -1,0 +1,24 @@
+
+
+/* addAlbum container style */
+.addalbum-container{
+    color: white;
+    padding-top: 73px;
+    width: 850px;
+    height: 600px;
+    margin: auto;
+}
+.addalbum-form{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(241, 207, 14);
+    color: black;
+    margin-top: 50px;
+}
+.addalbum-form button{
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;margin-left: 35%;
+}
+

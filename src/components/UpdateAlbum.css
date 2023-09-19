@@ -1,0 +1,25 @@
+
+/* UpdateAlbum component style */
+.update-album{
+    width: 350px;
+    margin: auto;
+    padding-top: 73px;
+    color: rgb(218, 218, 218);
+}
+.form-container{
+    background: linear-gradient(45deg, #1abde6, #b8e614);
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.inp-container{
+    margin: 10px;
+}
+.form-container button{
+    background: linear-gradient(45deg, #3473e9, #0ce442);
+    padding: 10px 30px;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 40%;
+}
